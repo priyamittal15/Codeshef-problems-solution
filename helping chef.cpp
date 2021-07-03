@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
-int main()
-{
+int main(){
 	int n,a;
 	cin>>n;
 	for(int i=0;i<n;i++){
 		cin>>a;
-		int r=1;
-		while(a>0){
-			r=r*a;
-			a--;
+		if(a<10){
+			cout<<"Thanks for helping Chef!"<<"\n";
+			
 		}
-		cout<<r<<"\n";
+		else{
+			cout<<-1<<"\n";
+		}
 	}
 	return 0;
 }
